@@ -19,6 +19,8 @@
   "author": "Daniel Cook",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.4",
     "vue": "^2.6.10",
     "vue-router": "^3.0.2"
   },
@@ -58,5 +60,6 @@
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1",
     "webpack-merge": "^4.2.1"
-  }
+  },
+  "repository": "https://github.com/nutsa-k/vue-webpack4-template.git"
 }

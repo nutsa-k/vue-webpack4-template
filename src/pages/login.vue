@@ -1,18 +1,5 @@
 <template>
-  <div>
-    <div class="container-fluid">
-      <b-card
-        overlay
-        img-src="https://i.pinimg.com/originals/4a/68/2e/4a682e0b6df5798e7511120f102483c7.jpg"
-        img-alt="Card Image"
-        text-variant="black"
-        title="WELCOME TO THE B BLOG"
-      >
-      </b-card>
-    </div>
-  
-
-    <div class="full-width center-content">
+  <div class="full-width center-content">
     <b-form @submit="onSubmit">
       <b-form-group
         id="input-group-email"
@@ -78,20 +65,3 @@ export default {
   }
 }
 </script>
-
-  <style>
-    .container-fluid{
-    justify-content: center;
-    text-align: center;
-    }
-    h1 {
-    font-size: 5rem;
-    font-weight: bold;
-    margin-bottom: 30px;
-    }
-    span {
-    display: block;
-    padding-bottom: 30px;
-    font-size: 1.6rem;
-    }
-  </style>

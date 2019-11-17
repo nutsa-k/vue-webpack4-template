@@ -2,16 +2,16 @@
   <div>
     <h1>Hey! It's <span v-if="user">{{ user.name }}</span> 's B Blog</h1>
 
-  <ul>
+    <ul>
       <li
         v-for="blog in blog"
         :key="blog"
       >
-        {{ blog.title }},
-        {{ blog.text }}
+        <p> {{ blog.img }} </p>
+        <p> {{ blog.title }} </p>
+        <p> {{ blog.text }} </p>
       </li>
     </ul>
-
   </div>
 </template>
 
@@ -20,6 +20,11 @@ export default {
   data: function () {
     return {
       user: undefined
+    }
+  },
+  data: function () {
+    return {
+      blog: []
     }
   },
   created: function () {
@@ -33,15 +38,6 @@ export default {
     let v = sessionStorage.user
     if (v !== 'undefined') {
       this.user = JSON.parse(v)
-    }
-  }
-}
-
-
-export default {
-  data: function () {
-    return {
-      blog: []
     }
   },
   created: function () {

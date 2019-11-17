@@ -10,7 +10,6 @@
             card-header
             tabs
           >
-            
             <b-nav-item
               to="/"
               exact

@@ -1,0 +1,15 @@
+{
+  "blog": [
+    {
+      "id": "1",
+      "title": "Big City Life",
+      "img": "https://miro.medium.com/max/6048/1*1huYXLomo9uEDPqxEjF51A.jpeg",
+      "text": "London is there for you.London is comfortable, safe, its Europe for christ’s sake! (lol, k). Everyone is jogging in the morning. International capital of the world. Tolerant, democratic, gluten-free. Healthy for body and soul.And then there is Moscow.11.98 million people. Loud. Scary. Drunk and focused at the same time. Vibrant. A separate living organism. If they hate you — they hate you hard, and if they love you they do it with passion, there is no in-between. Deceptive and horribly truthful. You barely can resist."
+    },
+
+    {
+      "id": "2",
+      "title": "Power of Education",
+      "img": "https://www.isasa.org/wp-content/uploads/2018/05/systemic-evaluation.jpg",
+      "text": "I doubt that Aristotle was trying to undermine the whole notion of parenting. Parents and guardians do play a significant role in the formation of a child’s character. However, education, especially in our early years, has the power to shape our minds and set our vision on how to navigate this world in the future.I grew up in Moscow, Russia and I studied in a state school before doing my GCSEs and A-levels in college in Brighton, UK. Russian education, in my opinion, is quite a challenge — you pretty much have no choice but to study everything in the world, even if you hate it. Everyone has endless amounts of information available to them: books, tutors — you name it, yet both in Russia and here in England pupils are taught that one day you will have to work 50 hours a week for someone else to make your ends meet. Why is that?"    }
+]}

@@ -1,42 +1,64 @@
 <template>
-  <div>
-    <b-navbar
-      toggleable="lg"
-      type="dark"
-      variant="info"
-    >
-      <b-navbar-brand href="#">
-        B
-      </b-navbar-brand>
-
-      <b-navbar-toggle target="nav-collapse" />
-
-      <b-collapse
-        id="nav-collapse"
-        is-nav
+  <div class="container center-content">
+    <div id="nav">
+      <b-card
+        title="FFD"
+        no-body
       >
-        <b-navbar-nav>
-          <b-nav-item href="#">
-            Link
-          </b-nav-item>
-          <b-nav-item href="profile">
-            Profile
-          </b-nav-item>
-          <b-nav-item href="contact">
-            Contact
-          </b-nav-item>
-          <b-nav-item href="gallery">
-            Gallery
-          </b-nav-item>
-          <b-nav-item href="login">
-            Log in
-          </b-nav-item>
-          <b-nav-item href="logout">
-            Log out
-          </b-nav-item>
-        </b-navbar-nav>
-      </b-collapse>
-    </b-navbar>
+        <b-card-header header-tag="nav">
+          <b-nav
+            card-header
+            tabs
+          >
+            
+            <b-nav-item
+              to="/"
+              exact
+              exact-active-class="active"
+            >
+              <img
+                src="https://i.pinimg.com/originals/4a/68/2e/4a682e0b6df5798e7511120f102483c7.jpg"
+                alt="Logo"
+                title="Home"
+                height="42"
+                width="68"
+              >
+            </b-nav-item>
+            <b-nav-item
+              to="/profile"
+              exact
+              exact-active-class="active"
+            >
+              Profile
+            </b-nav-item>
+            <b-nav-item
+              to="/contact"
+              exact
+              exact-active-class="active"
+            >
+              Contact Us
+            </b-nav-item>
+            <b-nav-item
+              v-if="user"
+              to="/logout"
+              exact
+              exact-active-class="active"
+            >
+              Log out
+            </b-nav-item>
+            <b-nav-item
+              v-else
+              to="/login"
+              exact
+              exact-active-class="active"
+            >
+              Log in
+            </b-nav-item>
+          </b-nav>
+        </b-card-header>
+      </b-card>
+    </div>
+    <RouterView />
   </div>
 </template>
 
@@ -44,4 +66,29 @@
 .container
   font-family 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
   max-width 1200px
+b-nav-item
+  font-size 40px
 </style>
+
+<script>
+export default {
+  data: function () {
+    return {
+      user: undefined
+    }
+  },
+  created: function () {
+    fetch('https://api.myjson.com/bins/19jyre')
+      .then(response => response.json())
+      .then(json => {
+        this.users = json.users
+      })
+  },
+  mounted: function () {
+    let v = sessionStorage.user
+    if (v !== 'undefined') {
+      this.user = JSON.parse(v)
+    }
+  }
+}
+</script>

@@ -6,78 +6,20 @@
         img-src="https://i.pinimg.com/originals/4a/68/2e/4a682e0b6df5798e7511120f102483c7.jpg"
         img-alt="Card Image"
         text-variant="black"
-        title="WELCOME TO THE B BLOG"
+        title="THE B BLOG"
       >
       </b-card>
     </div>
-  
+    
+    <h1> Welcome to the B Blog! </h1>
 
-    <div class="full-width center-content">
-    <b-form @submit="onSubmit">
-      <b-form-group
-        id="input-group-email"
-        label="Email:"
-        label-for="input-email"
-      >
-        <b-form-input
-          id="input-email"
-          v-model="form.email"
-          required
-          placeholder="Your email address"
-        />
-      </b-form-group>
-      <b-form-group
-        id="input-group-password"
-        label="Password:"
-        label-for="input-password"
-      >
-        <b-input
-          id="input-password"
-          v-model="form.password"
-          type="password"
-          required
-        />
-      </b-form-group>
-      <b-button
-        type="submit"
-        variant="primary"
-      >
-        Log in
-      </b-button>
-    </b-form>
+    <p> This is a safe place where you can share your stories with the world </p>
+
+    <img src = "https://secure.gotwww.com/gotlocations.com/achservices/images/safe_place.jpg"> </img> 
+
   </div>
 </template>
-<script>
-export default {
-  data: function () {
-    return {
-      form: {
-        email: '',
-        password: ''
-      }
-    }
-  },
-  methods: {
-    onSubmit () {
-      let myjson = [{ // should be retrieved from the session storage which is intialized with the JSON.parse og myjson
-        email: '1',
-        password: '2',
-        name: '3'
-      },
-      {
-        email: 'a',
-        password: 'b',
-        name: 'c'
-      }
-      ]
-      let email = this.form.email
-      let password = this.form.password
-      sessionStorage.user = JSON.stringify(myjson.find(function (user) { return ((user.email === email) && (user.password === password)) }))
-      this.$router.push('/')
-    }
-  }
-}
-</script>
+
 
   <style>
     .container-fluid{

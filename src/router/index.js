@@ -6,7 +6,6 @@ import contact from 'pages/contact'
 import profile from 'pages/profile'
 import login from 'pages/login'
 import logout from 'pages/logout'
-import gallery from 'pages/gallery'
 
 Vue.use(Router)
 
@@ -34,11 +33,6 @@ const routes = [
   {
     path: '/logout',
     component: logout
-  },
-
-  {
-    path: '/gallery',
-    component: gallery
   }
 ]
 

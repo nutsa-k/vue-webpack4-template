@@ -4,7 +4,7 @@
 
     <ul>
       <li
-        v-for="blog in blog"
+        v-for="blog in blogs"
         :key="blog"
       >
         <p> {{ blog.img }} </p>
@@ -19,21 +19,11 @@
 export default {
   data: function () {
     return {
-      user: undefined
+      user: undefined,
+      blogs: []
     }
   },
-  data: function () {
-    return {
-      blog: []
-    }
-  },
-  created: function () {
-    fetch('https://api.myjson.com/bins/19jyre')
-      .then(response => response.json())
-      .then(json => {
-        this.users = json.users
-      })
-  },
+
   mounted: function () {
     let v = sessionStorage.user
     if (v !== 'undefined') {

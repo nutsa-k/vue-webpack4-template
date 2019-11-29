@@ -1,15 +1,16 @@
 <template>
   <div>
-    <h1>Hey! It's <span v-if="user">{{ user.name }}</span> 's B Blog</h1>
-
+    <div class="container center-content">
+      <h2>Welcome to <h1 v-if="user">{{ user.name }}'s</h1> Blog</h2>
+    </div>
     <ul>
       <li
         v-for="blog in blogs"
         :key="blog"
       >
-        <p> {{ blog.img }} </p>
-        <p> {{ blog.title }} </p>
-        <p> {{ blog.text }} </p>
+         {{ blog.img }} 
+         {{ blog.title }} 
+         {{ blog.text }} 
       </li>
     </ul>
   </div>
@@ -31,7 +32,7 @@ export default {
     }
   },
   created: function () {
-    fetch('https://api.myjson.com/bins/i1qm2')
+    fetch('https://api.myjson.com/bins/d5oca')
       .then(response => response.json())
       .then(json => {
         this.blog = json.blog
@@ -39,3 +40,11 @@ export default {
   }
 }
 </script>
+
+<style>
+
+h1 {
+    color: violet;
+}
+
+</style>

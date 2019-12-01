@@ -94,7 +94,7 @@ export default {
     }
   },
   created: function () {
-    fetch('https://api.myjson.com/bins/19jyre')
+    fetch('https://api.myjson.com/bins/16xham')
       .then(response => response.json())
       .then(json => {
         this.users = json.users

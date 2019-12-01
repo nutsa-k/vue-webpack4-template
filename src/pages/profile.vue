@@ -1,18 +1,16 @@
 <template>
   <div>
     <div class="container center-content">
-      <h2>Welcome to <h1 v-if="user">{{ user.name }}'s</h1> Blog</h2>
+        <h1 v-if="user">{{ user.name }} </h1>
     </div>
-    <ul>
-      <li
-        v-for="blog in blogs"
-        :key="blog"
-      >
-         {{ blog.img }} 
-         {{ blog.title }} 
-         {{ blog.text }} 
-      </li>
-    </ul>
+    <div class="container center-content">
+        <h2>Welcome back to your B Blog!</h2>
+    </div>
+        <h3 v-if="user">{{ user.title }} </h3>    
+    <div class="container center-content">
+        <p v-if="user">{{ user.text }} </p>
+    </div>
+
   </div>
 </template>
 

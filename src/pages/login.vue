@@ -48,7 +48,7 @@ export default {
   },
   methods: {
     onSubmit () {
-      fetch('https://api.myjson.com/bins/19jyre')
+      fetch('https://api.myjson.com/bins/16xham')
         .then(response => response.json())
         .then(json => {
           this.users = json.users
@@ -64,9 +64,9 @@ export default {
         })
       /*
       let myjson = []
-      myjson = JSON.parse('https://api.myjson.com/bins/19jyre')
+      myjson = JSON.parse('https://api.myjson.com/bins/16xham')
       let req = new XMLHttpRequest();
-      req.open('GET', 'https://api.myjson.com/bins/19jyre', false);
+      req.open('GET', 'https://api.myjson.com/bins/16xham', false);
       req.send(null);
       console.log(req.responseText);
       myjson = JSON.parse(req.responseText.users)

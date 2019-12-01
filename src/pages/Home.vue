@@ -1,13 +1,14 @@
 <template>
   <div>
-    <h1> Welcome to the B Blog! </h1>
+    <h1 class="container center-content"> Welcome to the B Blog! </h1>
 
+    <div class="container center-content">
     <img
       src="https://secure.gotwww.com/gotlocations.com/achservices/images/safe_place.jpg"
-      width="40%"
-    >
-
-    <h5> This is a safe place where you can share your stories with the world </h5>
+      width="40%">
+    </div>
+    <h2 class="container center-content"><a href="#/login">LOG IN </a></h2>
+    <h3 class="container center-content"> to see your blog posts </h3>
   </div>
 </template>
 
@@ -26,7 +27,7 @@
     padding-bottom: 30px;
     font-size: 1.6rem;
     }
-    h5 {
+    h3 {
         color: violet;
     }
   </style>

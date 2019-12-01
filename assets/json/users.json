@@ -4,13 +4,21 @@
       "id": "1",
       "email": "barbara@aup.edu",
       "password": "12345",
-      "name": "Barbara"
+      "name": "Barbara",
+      "title": "Big City Life",
+      "img": "https://miro.medium.com/max/6048/1*1huYXLomo9uEDPqxEjF51A.jpeg",
+      "text": "We live in a world of massive consumerism, and we are constantly bombarded by products both offline and online."
+        
     },
     {
       "id": "2",
       "email": "luca@aup.edu",
       "password": "123456",
-      "name": "Luca"
+      "name": "Luca",
+      "title": "Metro Tickets Price Have Raised",
+      "img": "https://miro.medium.com/max/6048/1*1huYXLomo9uEDPqxEjF51A.jpeg",
+      "text": "In September, six million people across the world took to the streets to raise awareness for climate change. The changing environment has been at the forefront of conversation for months, and Paris transportation is taking a step towards a greener city"
+        
     }
   ]
 }
